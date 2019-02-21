@@ -1,6 +1,5 @@
 import turtle,tkinter
 
-# turtle.shape("turtle")
 
 """
 creation de la classe.
@@ -23,8 +22,15 @@ class Bouge_Tortue():
 			turtle.right(pas)
 			
 """
-instantiation de la classe
-		
+# tout le code ci-dessous est fait pour faire comprendre 
+# l'instantiation, entre autres, et comment cette instantiation peut-être utilisé 
+# dans une boucle.
+
+# le shape permet d'avoir un format de tortue 
+
+turtle.shape("turtle")
+
+# instantiation de la classe
 			
 varia1 = Bouge_Tortue()
 
