@@ -1,6 +1,6 @@
 import turtle,tkinter
 
-turtle.shape("turtle")
+# turtle.shape("turtle")
 
 """
 creation de la classe.
@@ -24,15 +24,17 @@ class Bouge_Tortue():
 			
 """
 instantiation de la classe
-"""			
+		
 			
 varia1 = Bouge_Tortue()
 
-"""
-on boucle sur les deux méthodes , pour avoir une automatisation de dessin.
-Pour info, chaque nouveau dessin commence là ou finit l'ancien.
-"""
+
+# on utilise les deux méthodes , pour avoir une automatisation de dessin.
+# Pour info, chaque nouveau dessin commence là ou finit l'ancien.
+
 
 for cpte in range(0,5):
 	varia1.tortue_carre(0,4)
 	varia1.tortue_mini_spirale(0,100)	
+	
+"""	
