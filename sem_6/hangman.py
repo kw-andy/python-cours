@@ -1,10 +1,20 @@
-mot_devin = list(input('tape ton mot à deviner \n'))
-soluce = [w.replace(w,'-') for w in mot_devin]
+"""
+exercice v1 pour le jeu du pendu sur python
+"""
+
+
+#def lettre_dans_mot_a_deviner(lettre,mot_devin):
+
+
+#a in aba
+
+mot_devin = list(input('tape ton mot à deviner \n')) #le mot défini
+soluce = [w.replace(w,'-') for w in mot_devin] #le mot deviné 
 cpteur_erreur = 0
 lettre_deja_demande = []
 
 
-while '-' in soluce:               
+while '-' in soluce:        #for , if , while       
 	lettre = input('tape ta lettre \n')
 
 	print("Il vous reste encore " + str(8 - cpteur_erreur) + " chances")
