@@ -1,4 +1,4 @@
-# python-cours : pour découvrir de façon un peu plus avancé Python
+# python-cours et tech tests : pour découvrir de façon un peu plus avancé Python
 
 les cours seront fait par semaine 
 
@@ -10,4 +10,4 @@ les cours seront fait par semaine
 
 - Le reste des semaines est consacré à divers exercices
 
-- Tech tests est un répertoire avec tous les quelques tests techniques que j'ai fait et surtout les days of advent of code que j'ai pu mettre en place
+- Tech tests est un répertoire avec tous les quelques tests techniques que j'ai fait et surtout les days of advent of code que j'ai pu écrire (pour les deux premiers exercices pour 2018) 
