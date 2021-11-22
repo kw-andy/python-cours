@@ -16,37 +16,34 @@ emp id,emp_first_name,emp_last_name,emp_job_title,emp_salary,hiredate,departdate
 
 from datetime import datetime
 
+
 def data_cleaning(data):
     raw_data = data.split("\n")
     fin_raw_data = raw_data[1:]
-    headers = fin_raw_data[1].split(',')
+    headers = fin_raw_data[1].split(",")
     liste = []
     dictio = {}
     final_liste = []
     for line in fin_raw_data[2:]:
-        data_line = line.split(',')
+        data_line = line.split(",")
         liste.append(data_line)
     for things in liste:
-        for idx,value in enumerate(things):
-            dictio[headers[idx]] = value
+        for idx_in_things, value_in_things in enumerate(things):
+            dictio[headers[idx_in_things]] = value_in_things
         final_liste.append(dictio.copy())
-    return final_liste              
+    return final_liste
+
 
 def change_string_date(data):
     input = data
-    for idx,values in enumerate(input):
-        for keys, val in values.items():
-            if (keys == 'hiredate' or keys == 'departdate'):
-                if values[keys] not in ['',None]:
-                    values[keys] = datetime.strptime(val,'%d/%m/%y').strftime('%d-%m-%Y')
-    return input            
+    for idx_in_input, values_in_input in enumerate(input):
+        for key in "hiredate", "departdate":
+            if values_in_input.get(key) not in {"", None}:
+                values_in_input[key] = datetime.strptime(
+                    values_in_input[key], "%d/%m/%y"
+                ).strftime("%d-%m-%Y")
+    return input
 
 
 if __name__ == "__main__":
-    change_string_date(data_cleaning(data))    
-
-
-
-    
-
-
+    change_string_date(data_cleaning(data))
